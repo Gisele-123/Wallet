@@ -19,4 +19,3 @@ Step-2: Run "npm install" to install all the dependencies.
 
 Hosted app: https://wallet-kohl-pi.vercel.app/
 
-It's fully intergrated now
