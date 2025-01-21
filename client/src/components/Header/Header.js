@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -30,13 +31,13 @@ const Header = () => {
             <div className="flex flex-wrap xl:items-center -mx-4">
               <div className="w-full md:w-1/2 px-4 mb-16 md:mb-0">
                 <span className="inline-block py-px px-2 mb-4 text-xs leading-5 text-white bg-green-500 uppercase rounded-9xl">
-                  PROJECT INCOME-EXPENSES TRACKER
+                  MY WALLET TRACKER
                 </span>
                 <h1 className="mb-6 text-3xl md:text-5xl lg:text-6xl leading-tight font-bold tracking-tight">
-                  Save Time and Money with the Budget Tracker
+                  Save Time and Money with the Wallet Tracker
                 </h1>
                 <p className="mb-8 text-lg md:text-xl text-gray-500 font-medium">
-                  Try our Simple Income & Expenses Tracker Application, the
+                  Try our Simple Wallet Tracker Application, the
                   simple way to track your income and expenses in one place.
                 </p>
                 <div className="flex flex-wrap">
@@ -49,20 +50,20 @@ const Header = () => {
                     </a>
                   </div>
                   <div className="w-full md:w-auto py-1 md:py-0">
-                    <a
-                      className="inline-block py-5 px-7 w-full text-base md:text-lg leading-4 text-coolGray-800 font-medium text-center bg-white hover:bg-coolGray-100 focus:ring-2 focus:ring-coolGray-200 focus:ring-opacity-50 border border-coolGray-200 rounded-md shadow-sm"
-                      href="#"
-                    >
-                      Sign Up
-                    </a>
+                        <Link
+                        to="/login"
+                        className="inline-block py-5 px-7 w-full text-base md:text-lg leading-4 text-coolGray-800 font-medium text-center bg-white hover:bg-coolGray-100 focus:ring-2 focus:ring-coolGray-200 focus:ring-opacity-50 border border-coolGray-200 rounded-md shadow-sm"
+                      >
+                        Sign in
+                      </Link>
                   </div>
                 </div>
               </div>
               <div className="w-full md:w-1/2 px-4">
                 <div className="relative mx-auto md:mr-0 max-w-max">
                   <img
-                    className="relative rounded-7xl"
-                    src="https://cdn.pixabay.com/photo/2017/08/30/07/56/clock-2696234_960_720.jpg"
+                    className="relative rounded-7xl w-[450px]"
+                    src="https://play-lh.googleusercontent.com/lwOWVQJ4_zboC6Jrv0M2aq5ip_d1V0Fz84b2TXIWh1_inxkQJF5Eqe9BKZAOz7F6dw=w240-h480-rw"
                     alt="landing"
                   />
                 </div>

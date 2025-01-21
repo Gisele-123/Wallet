@@ -1,6 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import Header from "../Header/Header";
+import { Link } from "react-router-dom";
+import Footer from "../Footer/Footer";
 
 const HomePage = () => {
   return (
@@ -10,7 +12,7 @@ const HomePage = () => {
         <div className="container px-4 mx-auto">
           <div className="md:max-w-4xl mb-16 md:mb-20">
             <span className="inline-block py-px px-2 mb-4 text-xs leading-5 text-green-500 bg-green-100 font-medium uppercase rounded-full shadow-sm">
-              INCOME & EXPENSES TRACKER
+              My WALLET TRACKER
             </span>
             <h1 className="mb-4 text-3xl md:text-4xl leading-tight font-bold tracking-tighter">
               Track Your Project Income and Expenses
@@ -107,7 +109,7 @@ const HomePage = () => {
             <div className="w-full md:w-1/2 px-4">
               <div className="relative mx-auto md:mr-0 max-w-max">
                 <img
-                  src="https://cdn.pixabay.com/photo/2016/10/09/19/19/coins-1726618_960_720.jpg"
+                  src="https://www.moneydigest.com/img/gallery/heres-how-much-money-really-exists-in-the-world/intro-1704559079.jpg"
                   alt="home"
                 />
               </div>
@@ -115,7 +117,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      {/* Call to Action */}
+      
       <section className="relative py-24 md:pb-32 bg-white overflow-hidden">
         <div className="relative container px-4 mx-auto">
           <div className="xl:max-w-4xl mb-18 md:mb-16 mx-auto text-center">
@@ -130,12 +132,14 @@ const HomePage = () => {
               We believe a diverse team, approaches to work and transparency are
               key to our success.
             </p>
-            <a
+
+            <Link
+              to="/register"
               className="inline-flex items-center justify-center px-7 py-3 h-14 w-full md:w-auto text-lg leading-7 text-green-50 bg-green-500 hover:bg-green-600 font-medium focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 border border-transparent rounded-md shadow-sm"
-              href="#"
+
             >
-              Get Started
-            </a>
+              Get started
+            </Link>
           </div>
           <div className="relative max-w-4xl mx-auto">
             <img
@@ -146,6 +150,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 };
